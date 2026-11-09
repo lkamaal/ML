@@ -1,0 +1,25 @@
+cleaning:
+  date_column: time
+  timezone: Europe/Moscow
+  operations:
+  - datetime
+  - duplicates
+  - monotonicity
+  - outliers
+  - resampling
+  outliers:
+    method: iqr
+    multiplier: 1.5
+    action: clip
+    columns:
+    - temperature_2m_mean
+    - temperature_2m_max
+    - temperature_2m_min
+    - relative_humidity_2m_mean
+    - precipitation_sum
+    - wind_speed_10m_max
+    - pressure_msl_mean
+  resampling:
+    enabled: false
+    frequency: D
+    aggregation: mean

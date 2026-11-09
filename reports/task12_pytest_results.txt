@@ -1,0 +1,64 @@
+[1m============================= test session starts ==============================[0m
+platform darwin -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/lenar_966/Desktop/NLP/Practika_1
+[1mcollecting ... [0mcollected 13 items
+
+tests/test_pipeline.py::test_required_files_exist [32mPASSED[0m[32m                 [  7%][0m
+tests/test_pipeline.py::test_dataset_structure [32mPASSED[0m[32m                    [ 15%][0m
+tests/test_pipeline.py::test_target_has_no_missing_values [32mPASSED[0m[32m         [ 23%][0m
+tests/test_pipeline.py::test_lag_features [31mFAILED[0m[31m                         [ 30%][0m
+tests/test_pipeline.py::test_rolling_features [31mFAILED[0m[31m                     [ 38%][0m
+tests/test_pipeline.py::test_no_direct_target_copy [32mPASSED[0m[31m                [ 46%][0m
+tests/test_pipeline.py::test_chronological_split [32mPASSED[0m[31m                  [ 53%][0m
+tests/test_pipeline.py::test_time_series_cv [32mPASSED[0m[31m                       [ 61%][0m
+tests/test_pipeline.py::test_imputer_train_only [32mPASSED[0m[31m                   [ 69%][0m
+tests/test_pipeline.py::test_scaler_train_only [32mPASSED[0m[31m                    [ 76%][0m
+tests/test_pipeline.py::test_model_reproducibility [32mPASSED[0m[31m                [ 84%][0m
+tests/test_pipeline.py::test_model_save_load [32mPASSED[0m[31m                      [ 92%][0m
+tests/test_pipeline.py::test_predictions_are_finite [32mPASSED[0m[31m               [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m______________________________ test_lag_features _______________________________[0m
+[1m[31mtests/test_pipeline.py[0m:147: in test_lag_features
+    [0mnp.testing.assert_allclose([90m[39;49;00m
+[1m[31mE   AssertionError: [0m
+[1m[31mE   Not equal to tolerance rtol=1e-07, atol=1e-07[0m
+[1m[31mE   Ошибка лагового признака: temperature_2m_mean_lag_1[0m
+[1m[31mE   Mismatched elements: 1 / 731 (0.137%)[0m
+[1m[31mE   Mismatch at index:[0m
+[1m[31mE    [4]: -24.799999999999997 (ACTUAL), -25.5 (DESIRED)[0m
+[1m[31mE   Max absolute difference among violations: 0.7[0m
+[1m[31mE   Max relative difference among violations: 0.02745098[0m
+[1m[31mE    ACTUAL: array([ -2.1, -13.3, -19.5, -24.3, -24.8, -23.1, -17.8, -22.8, -20.6,[0m
+[1m[31mE           -8.7,  -8. ,  -5.6, -14.1, -22.9, -18.2,  -4.3,  -2.3,  -9.9,[0m
+[1m[31mE          -12.9,  -6. ,  -8.5, -13.3, -10.2,  -4.8,  -1.2,  -0.8,  -3.4,...[0m
+[1m[31mE    DESIRED: array([ -2.1, -13.3, -19.5, -24.3, -25.5, -23.1, -17.8, -22.8, -20.6,[0m
+[1m[31mE           -8.7,  -8. ,  -5.6, -14.1, -22.9, -18.2,  -4.3,  -2.3,  -9.9,[0m
+[1m[31mE          -12.9,  -6. ,  -8.5, -13.3, -10.2,  -4.8,  -1.2,  -0.8,  -3.4,...[0m
+[31m[1m____________________________ test_rolling_features _____________________________[0m
+[1m[31mtests/test_pipeline.py[0m:198: in test_rolling_features
+    [0mnp.testing.assert_allclose([90m[39;49;00m
+[1m[31mE   AssertionError: [0m
+[1m[31mE   Not equal to tolerance rtol=1e-07, atol=1e-07[0m
+[1m[31mE   Ошибка скользящего признака: temperature_2m_mean_roll_mean_7[0m
+[1m[31mE   Mismatched elements: 7 / 731 (0.958%)[0m
+[1m[31mE   First 5 mismatches are at indices:[0m
+[1m[31mE    [4]: -11.942857142857141 (ACTUAL), -12.042857142857143 (DESIRED)[0m
+[1m[31mE    [5]: -15.0 (ACTUAL), -15.099999999999998 (DESIRED)[0m
+[1m[31mE    [6]: -17.842857142857145 (ACTUAL), -17.942857142857143 (DESIRED)[0m
+[1m[31mE    [7]: -20.8 (ACTUAL), -20.900000000000002 (DESIRED)[0m
+[1m[31mE    [8]: -21.842857142857145 (ACTUAL), -21.942857142857147 (DESIRED)[0m
+[1m[31mE   Max absolute difference among violations: 0.1[0m
+[1m[31mE   Max relative difference among violations: 0.00830368[0m
+[1m[31mE    ACTUAL: array([ -1.5     ,  -3.114286,  -5.728571,  -8.8     , -11.942857,[0m
+[1m[31mE          -15.      , -17.842857, -20.8     , -21.842857, -20.3     ,[0m
+[1m[31mE          -17.971429, -15.228571, -13.942857, -14.671429, -14.014286,...[0m
+[1m[31mE    DESIRED: array([ -1.5     ,  -3.114286,  -5.728571,  -8.8     , -12.042857,[0m
+[1m[31mE          -15.1     , -17.942857, -20.9     , -21.942857, -20.4     ,[0m
+[1m[31mE          -18.071429, -15.228571, -13.942857, -14.671429, -14.014286,...[0m
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m tests/test_pipeline.py::[1mtest_lag_features[0m - AssertionError: 
+[31mFAILED[0m tests/test_pipeline.py::[1mtest_rolling_features[0m - AssertionError: 
+[31m========================= [31m[1m2 failed[0m, [32m11 passed[0m[31m in 1.05s[0m[31m =========================[0m
+

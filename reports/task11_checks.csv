@@ -1,0 +1,4 @@
+﻿Проверка,Результат
+TimeSeriesSplit: хронология,True
+GroupKFold: отсутствие пересечения групп,True
+GroupShuffleSplit: отсутствие пересечения групп,True
