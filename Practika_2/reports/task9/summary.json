@@ -1,0 +1,9 @@
+{
+    "train_size": 560,
+    "test_size": 141,
+    "baseline_r2": 0.8953042544863761,
+    "structured_r2": 0.8938680527891679,
+    "random_target_r2": -0.11802767742734921,
+    "random_mean_r2": -0.05650271421766495,
+    "all_protocol_checks_passed": true
+}

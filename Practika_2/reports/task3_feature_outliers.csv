@@ -1,0 +1,14 @@
+﻿feature,outlier_count,outlier_percent
+temperature_2m_mean,1,0.14
+temperature_2m_mean_lag_1,1,0.14
+temperature_2m_mean_lag_2,1,0.14
+temperature_2m_mean_roll_mean_7,0,0.0
+temperature_2m_mean_roll_std_7,38,5.2
+day_of_week_sin,0,0.0
+month_sin,0,0.0
+day_of_week_cos,0,0.0
+month_cos,0,0.0
+temperature_2m_mean_roll_std_30,30,4.1
+temperature_2m_mean_roll_std_90,0,0.0
+temperature_2m_mean_lag_3,1,0.14
+temperature_2m_mean_lag_7,1,0.14

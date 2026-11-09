@@ -1,0 +1,7 @@
+﻿check,passed
+Нет пересечения индексов train/test,True
+TimeSeriesSplit сохраняет хронологию,True
+GroupKFold не пересекает группы,True
+Модели обучаются отдельно в каждом fold,True
+Scaler и KMeans находятся внутри Pipeline,True
+Лаги и rolling используют прошлые значения,True

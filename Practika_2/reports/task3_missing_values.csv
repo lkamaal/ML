@@ -1,0 +1,14 @@
+﻿,missing_count,missing_percent
+temperature_2m_mean,0,0.0
+temperature_2m_mean_lag_1,0,0.0
+temperature_2m_mean_lag_2,0,0.0
+temperature_2m_mean_roll_mean_7,0,0.0
+temperature_2m_mean_roll_std_7,0,0.0
+day_of_week_sin,0,0.0
+month_sin,0,0.0
+day_of_week_cos,0,0.0
+month_cos,0,0.0
+temperature_2m_mean_roll_std_30,0,0.0
+temperature_2m_mean_roll_std_90,0,0.0
+temperature_2m_mean_lag_3,0,0.0
+temperature_2m_mean_lag_7,0,0.0

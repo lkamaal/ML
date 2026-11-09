@@ -1,0 +1,13 @@
+﻿check,passed
+minimum_720_rows,True
+target_exists,True
+time_series_detected,True
+no_missing_target,True
+no_duplicate_dates,True
+no_invalid_dates,True
+no_infinite_values,True
+chronological_order,True
+no_missing_calendar_dates,True
+feature_config_available,True
+model_file_available,True
+transformers_file_available,True

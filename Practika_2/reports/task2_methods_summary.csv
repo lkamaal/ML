@@ -1,0 +1,7 @@
+﻿method,anomaly_count,anomaly_percent
+iqr,1,0.14
+zscore,5,0.68
+isolation_forest,22,3.01
+lof,22,3.01
+stl,0,0.0
+seasonal_esd,0,0.0

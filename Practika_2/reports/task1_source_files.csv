@@ -1,0 +1,8 @@
+﻿component,path,exists
+Подготовленный датасет,/Users/lenar_966/Desktop/ML/Practika_1/data/features_dataset.csv,True
+Исходный датасет,/Users/lenar_966/Desktop/ML/Practika_1/data/raw_dataset.csv,True
+Очищенный датасет,/Users/lenar_966/Desktop/ML/Practika_1/data/clean_dataset.csv,True
+Конфигурация признаков,/Users/lenar_966/Desktop/ML/Practika_1/feature_config.yaml,True
+Список признаков модели,/Users/lenar_966/Desktop/ML/Practika_1/reports/task10_feature_list.csv,True
+Модель Ridge,/Users/lenar_966/Desktop/ML/Practika_1/models/task10_ridge_pipeline.joblib,True
+Параметры преобразований,/Users/lenar_966/Desktop/ML/Practika_1/models/task5_transformers.joblib,True

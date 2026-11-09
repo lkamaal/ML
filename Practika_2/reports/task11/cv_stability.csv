@@ -1,0 +1,3 @@
+﻿cv,mean_delta_r2,std_delta_r2,improved_folds,total_folds
+GroupKFold,-0.0021608911090326144,0.002980557561049222,0,5
+TimeSeriesSplit,0.6867189788739996,1.6169035179469682,1,5

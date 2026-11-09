@@ -1,0 +1,14 @@
+﻿check,passed
+Наследование BaseEstimator,True
+Наследование TransformerMixin,True
+Метод fit,True
+Метод transform,True
+Метод fit_transform,True
+Эквивалентность fit_transform,True
+Состояние после transform неизменно,True
+Повторное преобразование совпадает,True
+Входные данные не изменяются,True
+Совместимость с clone,True
+Сериализация трансформера,True
+Сериализация Pipeline,True
+Хронологическое разделение,True

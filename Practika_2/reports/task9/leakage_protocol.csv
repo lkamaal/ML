@@ -1,0 +1,8 @@
+﻿check,passed
+Хронологическое разделение,True
+Причинность лагов и rolling,True
+Scaler обучен только на train,True
+KMeans обучен только на train,True
+IsolationForest обучен только на train,True
+Причинный признак изменения режима,True
+Исторические метки PELT не используются,True

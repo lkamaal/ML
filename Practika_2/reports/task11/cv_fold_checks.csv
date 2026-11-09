@@ -1,0 +1,11 @@
+﻿cv,fold,train_size,test_size,index_overlap,group_overlap,chronological,train_start,train_end,test_start,test_end
+TimeSeriesSplit,1,121,116,False,False,True,2024-01-31,2024-05-30,2024-05-31,2024-09-23
+TimeSeriesSplit,2,237,116,False,False,True,2024-01-31,2024-09-23,2024-09-24,2025-01-17
+TimeSeriesSplit,3,353,116,False,False,True,2024-01-31,2025-01-17,2025-01-18,2025-05-13
+TimeSeriesSplit,4,469,116,False,False,True,2024-01-31,2025-05-13,2025-05-14,2025-09-06
+TimeSeriesSplit,5,585,116,False,False,True,2024-01-31,2025-09-06,2025-09-07,2025-12-31
+GroupKFold,1,550,151,False,False,False,2024-01-31,2025-11-30,2024-07-01,2025-12-31
+GroupKFold,2,577,124,False,False,False,2024-02-01,2025-12-31,2024-01-31,2025-10-31
+GroupKFold,3,578,123,False,False,False,2024-01-31,2025-12-31,2024-03-01,2025-08-31
+GroupKFold,4,549,152,False,False,False,2024-01-31,2025-12-31,2024-04-01,2025-11-30
+GroupKFold,5,550,151,False,False,False,2024-01-31,2025-12-31,2024-02-01,2025-09-30

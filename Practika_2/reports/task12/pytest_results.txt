@@ -1,0 +1,52 @@
+[1m============================= test session starts ==============================[0m
+platform darwin -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/lenar_966/Desktop/ML/Practika_2/tests/task12
+plugins: anyio-4.16.0
+[1mcollecting ... [0mcollected 23 items
+
+test_structure.py::test_dataset_nonempty [32mPASSED[0m[32m                          [  4%][0m
+test_structure.py::test_dataset_no_missing_target [32mPASSED[0m[33m                 [  8%][0m
+test_structure.py::test_dataset_unique_dates [32mPASSED[0m[33m                      [ 13%][0m
+test_structure.py::test_dataset_chronological [32mPASSED[0m[33m                     [ 17%][0m
+test_structure.py::test_dataset_daily_frequency [32mPASSED[0m[33m                   [ 21%][0m
+test_structure.py::test_lag_1 [32mPASSED[0m[33m                                     [ 26%][0m
+test_structure.py::test_rolling_7 [32mPASSED[0m[33m                                 [ 30%][0m
+test_structure.py::test_future_values_do_not_change_past [32mPASSED[0m[33m          [ 34%][0m
+test_structure.py::test_features_have_no_nan_after_warmup [32mPASSED[0m[33m         [ 39%][0m
+test_structure.py::test_transformer_fit_returns_self [32mPASSED[0m[33m              [ 43%][0m
+test_structure.py::test_transformer_output_shape [32mPASSED[0m[33m                  [ 47%][0m
+test_structure.py::test_fit_transform_equivalence [32mPASSED[0m[33m                 [ 52%][0m
+test_structure.py::test_transform_does_not_refit [32mPASSED[0m[33m                  [ 56%][0m
+test_structure.py::test_transform_is_deterministic [32mPASSED[0m[33m                [ 60%][0m
+test_structure.py::test_input_not_modified [32mPASSED[0m[33m                        [ 65%][0m
+test_structure.py::test_clone_compatibility [32mPASSED[0m[33m                       [ 69%][0m
+test_structure.py::test_serialization [32mPASSED[0m[33m                             [ 73%][0m
+test_structure.py::test_pipeline_fit_predict [32mPASSED[0m[33m                      [ 78%][0m
+test_structure.py::test_pipeline_serialization [32mPASSED[0m[33m                    [ 82%][0m
+test_structure.py::test_time_series_split_order [32mPASSED[0m[33m                   [ 86%][0m
+test_structure.py::test_random_target_no_strong_signal [32mPASSED[0m[33m            [ 91%][0m
+test_structure.py::test_invalid_nan_rejected [32mPASSED[0m[33m                      [ 95%][0m
+test_structure.py::test_invalid_feature_count_rejected [32mPASSED[0m[33m            [100%][0m
+
+[33m=============================== warnings summary ===============================[0m
+test_structure.py::test_dataset_nonempty
+  /Users/lenar_966/Desktop/ML/Practika_2/tests/task12/structure_module.py:22: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+    df["date"] = df["time"].dt.normalize()
+
+test_structure.py: 10 warnings
+  /Users/lenar_966/Desktop/ML/Practika_2/tests/task12/structure_module.py:39: Pandas4Warning: Series.dt.dayofyear is deprecated and will be removed in a future version. Use Series.dt.day_of_year instead.
+    2 * np.pi * dates.dt.dayofyear / 365.25
+
+test_structure.py: 10 warnings
+  /Users/lenar_966/Desktop/ML/Practika_2/tests/task12/structure_module.py:42: Pandas4Warning: Series.dt.dayofyear is deprecated and will be removed in a future version. Use Series.dt.day_of_year instead.
+    2 * np.pi * dates.dt.dayofyear / 365.25
+
+test_structure.py: 10 warnings
+  /Users/lenar_966/Desktop/ML/Practika_2/tests/task12/structure_module.py:44: Pandas4Warning: Series.dt.dayofweek is deprecated and will be removed in a future version. Use Series.dt.day_of_week instead.
+    X["dayofweek"] = dates.dt.dayofweek
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/lenar_966/Desktop/ML/Practika_2/reports/task12/pytest_results.xml -
+[33m======================= [32m23 passed[0m, [33m[1m31 warnings[0m[33m in 1.76s[0m[33m ========================[0m
+

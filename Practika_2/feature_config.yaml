@@ -1,0 +1,39 @@
+target: temperature_2m_mean
+date_column: time
+timezone: Europe/Moscow
+lag_features:
+  enabled: true
+  lags:
+  - 1
+  - 2
+  - 3
+  - 7
+  - 14
+  - 30
+  - 90
+  - 365
+rolling_features:
+  enabled: true
+  windows:
+  - 7
+  - 30
+  - 90
+  statistics:
+  - mean
+  - std
+  - min
+  - max
+percentage_change:
+  enabled: true
+  periods:
+  - 1
+  - 7
+  - 30
+calendar_features:
+  enabled: true
+  cyclical_encoding: true
+interaction_features:
+  enabled: true
+polynomial_features:
+  enabled: true
+  degree: 2

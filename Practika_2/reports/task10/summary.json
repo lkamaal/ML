@@ -1,0 +1,19 @@
+{
+    "transformer": "TimeSeriesStructureTransformer",
+    "n_clusters": 3,
+    "original_features": 19,
+    "transformed_features": 25,
+    "checks_passed": 13,
+    "checks_total": 13,
+    "all_checks_passed": true,
+    "baseline_metrics": {
+        "r2": 0.8953042544863761,
+        "mae": 1.6352130213094944,
+        "rmse": 2.2250042795429934
+    },
+    "structure_metrics": {
+        "r2": 0.8907560864172611,
+        "mae": 1.6974303029755062,
+        "rmse": 2.2728195624998713
+    }
+}

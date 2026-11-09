@@ -1,0 +1,12 @@
+{
+    "task": 4,
+    "target": "temperature_2m_mean",
+    "window_size": 30,
+    "n_clusters": 3,
+    "random_state": 42,
+    "methods": [
+        "feature_kmeans",
+        "shape_dtw",
+        "representation_pca_kmeans"
+    ]
+}
