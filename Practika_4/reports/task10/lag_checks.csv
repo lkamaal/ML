@@ -1,0 +1,10 @@
+﻿feature,lag,passed,max_abs_difference
+target_lag_1,1,True,0.0
+target_lag_2,2,True,0.0
+target_lag_3,3,True,0.0
+target_lag_7,7,True,0.0
+target_lag_14,14,True,0.0
+target_lag_21,21,True,0.0
+target_lag_30,30,True,0.0
+target_lag_60,60,True,0.0
+target_lag_90,90,True,0.0

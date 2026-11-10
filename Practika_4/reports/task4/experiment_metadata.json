@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-11-11T00:54:58.123360",
+  "python_version": "3.12.3",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0",
+    "PyYAML": "6.0.3"
+  },
+  "search_mode": "balanced",
+  "n_iter": 10,
+  "n_splits": 5,
+  "trainval_rows": 512,
+  "feature_count": 34,
+  "models_requested": 16,
+  "models_successful": 16,
+  "models_failed": 0,
+  "baselines": [
+    "Naive",
+    "SeasonalNaive7"
+  ],
+  "validation_mode": "rolling_one_step_with_observed_history"
+}

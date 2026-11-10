@@ -1,0 +1,45 @@
+﻿check,passed,details
+raw_unique_dates,True,
+raw_sorted_dates,True,
+raw_daily_frequency,True,
+trainval_unique_dates,True,
+trainval_sorted_dates,True,
+trainval_daily_frequency,True,
+test_unique_dates,True,
+test_sorted_dates,True,
+test_daily_frequency,True,
+train_test_no_overlap,True,
+train_before_test,True,
+all_dates_in_raw,True,
+train_target_matches_raw,True,
+test_target_matches_raw,True,
+lag_1_correct,True,max difference=0.0
+lag_2_correct,True,max difference=0.0
+lag_3_correct,True,max difference=0.0
+lag_7_correct,True,max difference=0.0
+lag_14_correct,True,max difference=0.0
+lag_21_correct,True,max difference=0.0
+lag_30_correct,True,max difference=0.0
+lag_60_correct,True,max difference=0.0
+lag_90_correct,True,max difference=0.0
+target_roll_mean_3_correct,True,max difference=7.105427357601002e-15
+target_roll_std_3_correct,True,max difference=7.265230084207985e-13
+target_roll_min_3_correct,True,max difference=0.0
+target_roll_max_3_correct,True,max difference=0.0
+target_roll_mean_7_correct,True,max difference=7.105427357601002e-15
+target_roll_std_7_correct,True,max difference=2.7439162053610744e-13
+target_roll_min_7_correct,True,max difference=0.0
+target_roll_max_7_correct,True,max difference=0.0
+target_roll_mean_14_correct,True,max difference=7.105427357601002e-15
+target_roll_std_14_correct,True,max difference=2.666755705149626e-13
+target_roll_min_14_correct,True,max difference=0.0
+target_roll_max_14_correct,True,max difference=0.0
+target_roll_mean_30_correct,True,max difference=1.0658141036401503e-14
+target_roll_std_30_correct,True,max difference=1.3677947663381929e-13
+target_roll_min_30_correct,True,max difference=0.0
+target_roll_max_30_correct,True,max difference=0.0
+fold_1_chronological,True,
+fold_2_chronological,True,
+fold_3_chronological,True,
+fold_4_chronological,True,
+fold_5_chronological,True,

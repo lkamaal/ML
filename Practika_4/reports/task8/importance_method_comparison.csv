@@ -1,0 +1,5 @@
+﻿model,comparison_method,spearman_rho,p_value
+Lasso,Absolute standardized coefficient,0.9993081978554134,2.5121291908559683e-47
+ElasticNet,Absolute standardized coefficient,0.994261119081779,1.2191923916659625e-32
+Ridge,Absolute standardized coefficient,0.977998472116119,2.3654612500042493e-23
+ExtraTrees,Tree feature importance,0.9575248281130634,7.605892732587354e-19

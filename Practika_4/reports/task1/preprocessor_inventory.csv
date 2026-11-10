@@ -1,0 +1,5 @@
+﻿file,extension,size_kb,possible_preprocessor
+feature_config.yaml,.yaml,0.47,True
+config.yaml,.yaml,0.46,True
+models/task5_transformers.joblib,.joblib,34.18,True
+models/task10_ridge_pipeline.joblib,.joblib,22.27,True

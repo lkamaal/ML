@@ -1,0 +1,41 @@
+{
+  "models": [
+    "Ridge",
+    "RandomForest"
+  ],
+  "strategies": [
+    "Recursive",
+    "Direct",
+    "Hybrid"
+  ],
+  "horizons": [
+    1,
+    7,
+    30
+  ],
+  "max_horizon": 30,
+  "origin_step": 7,
+  "n_origins": 15,
+  "test_start": "2025-08-25",
+  "random_state": 42,
+  "hybrid_weights": {
+    "recursive": 0.5,
+    "direct": 0.5
+  },
+  "feature_lags": [
+    1,
+    2,
+    3,
+    7,
+    14,
+    21,
+    30
+  ],
+  "rolling_windows": [
+    3,
+    7,
+    14,
+    30
+  ],
+  "training_policy": "Models trained only on observations available before test period."
+}

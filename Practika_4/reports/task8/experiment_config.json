@@ -1,0 +1,17 @@
+{
+  "task": 8,
+  "models": [
+    "Lasso",
+    "ElasticNet",
+    "Ridge",
+    "ExtraTrees"
+  ],
+  "n_splits": 5,
+  "top_n": 15,
+  "shap_sample_size": 80,
+  "n_features": 34,
+  "ols_covariance": "HAC",
+  "ols_maxlags": 7,
+  "test_set_used": false,
+  "interpretation_warning": "Feature importance and SHAP describe model behavior, not causal effects."
+}

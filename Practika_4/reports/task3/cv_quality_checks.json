@@ -1,0 +1,12 @@
+{
+  "dates_unique": true,
+  "dates_sorted": true,
+  "daily_frequency": true,
+  "no_missing_features": true,
+  "train_test_no_overlap": true,
+  "train_before_test": true,
+  "five_cv_folds": true,
+  "all_folds_chronological": true,
+  "no_fold_overlap": true,
+  "horizon_gaps_valid": true
+}

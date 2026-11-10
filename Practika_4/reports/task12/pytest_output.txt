@@ -1,0 +1,49 @@
+[1m============================= test session starts ==============================[0m
+platform darwin -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /Users/lenar_966/Desktop/ML/Practika_4
+plugins: anyio-4.16.0
+[1mcollecting ... [0mcollected 40 items
+
+tests/test_task12.py::test_01_files_exist [32mPASSED[0m[32m                         [  2%][0m
+tests/test_task12.py::test_02_datasets_not_empty [32mPASSED[0m[32m                  [  5%][0m
+tests/test_task12.py::test_03_target_exists [32mPASSED[0m[32m                       [  7%][0m
+tests/test_task12.py::test_04_dates_are_unique [32mPASSED[0m[32m                    [ 10%][0m
+tests/test_task12.py::test_05_dates_are_sorted [32mPASSED[0m[32m                    [ 12%][0m
+tests/test_task12.py::test_06_daily_frequency [32mPASSED[0m[32m                     [ 15%][0m
+tests/test_task12.py::test_07_no_missing_modeling_values [32mPASSED[0m[32m          [ 17%][0m
+tests/test_task12.py::test_08_train_test_do_not_overlap [32mPASSED[0m[32m           [ 20%][0m
+tests/test_task12.py::test_09_targets_match_raw [32mPASSED[0m[32m                   [ 22%][0m
+tests/test_task12.py::test_10_lag_features[1] [32mPASSED[0m[32m                     [ 25%][0m
+tests/test_task12.py::test_10_lag_features[2] [32mPASSED[0m[32m                     [ 27%][0m
+tests/test_task12.py::test_10_lag_features[3] [32mPASSED[0m[32m                     [ 30%][0m
+tests/test_task12.py::test_10_lag_features[7] [32mPASSED[0m[32m                     [ 32%][0m
+tests/test_task12.py::test_10_lag_features[14] [32mPASSED[0m[32m                    [ 35%][0m
+tests/test_task12.py::test_10_lag_features[21] [32mPASSED[0m[32m                    [ 37%][0m
+tests/test_task12.py::test_10_lag_features[30] [32mPASSED[0m[32m                    [ 40%][0m
+tests/test_task12.py::test_10_lag_features[60] [32mPASSED[0m[32m                    [ 42%][0m
+tests/test_task12.py::test_10_lag_features[90] [32mPASSED[0m[32m                    [ 45%][0m
+tests/test_task12.py::test_11_rolling_mean[3] [32mPASSED[0m[32m                     [ 47%][0m
+tests/test_task12.py::test_11_rolling_mean[7] [32mPASSED[0m[32m                     [ 50%][0m
+tests/test_task12.py::test_11_rolling_mean[14] [32mPASSED[0m[32m                    [ 52%][0m
+tests/test_task12.py::test_11_rolling_mean[30] [32mPASSED[0m[32m                    [ 55%][0m
+tests/test_task12.py::test_12_rolling_std[3] [32mPASSED[0m[32m                      [ 57%][0m
+tests/test_task12.py::test_12_rolling_std[7] [32mPASSED[0m[32m                      [ 60%][0m
+tests/test_task12.py::test_12_rolling_std[14] [32mPASSED[0m[32m                     [ 62%][0m
+tests/test_task12.py::test_12_rolling_std[30] [32mPASSED[0m[32m                     [ 65%][0m
+tests/test_task12.py::test_13_rolling_min[3] [32mPASSED[0m[32m                      [ 67%][0m
+tests/test_task12.py::test_13_rolling_min[7] [32mPASSED[0m[32m                      [ 70%][0m
+tests/test_task12.py::test_13_rolling_min[14] [32mPASSED[0m[32m                     [ 72%][0m
+tests/test_task12.py::test_13_rolling_min[30] [32mPASSED[0m[32m                     [ 75%][0m
+tests/test_task12.py::test_14_rolling_max[3] [32mPASSED[0m[32m                      [ 77%][0m
+tests/test_task12.py::test_14_rolling_max[7] [32mPASSED[0m[32m                      [ 80%][0m
+tests/test_task12.py::test_14_rolling_max[14] [32mPASSED[0m[32m                     [ 82%][0m
+tests/test_task12.py::test_14_rolling_max[30] [32mPASSED[0m[32m                     [ 85%][0m
+tests/test_task12.py::test_15_timeseries_split_is_chronological [32mPASSED[0m[32m   [ 87%][0m
+tests/test_task12.py::test_16_model_fit_predict [32mPASSED[0m[32m                   [ 90%][0m
+tests/test_task12.py::test_17_predictions_have_correct_shape [32mPASSED[0m[32m      [ 92%][0m
+tests/test_task12.py::test_18_metrics_are_valid [32mPASSED[0m[32m                   [ 95%][0m
+tests/test_task12.py::test_19_residuals_are_correct [32mPASSED[0m[32m               [ 97%][0m
+tests/test_task12.py::test_20_joblib_roundtrip [32mPASSED[0m[32m                    [100%][0m
+
+[32m============================== [32m[1m40 passed[0m[32m in 1.59s[0m[32m ==============================[0m
+

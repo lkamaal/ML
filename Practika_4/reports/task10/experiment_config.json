@@ -1,0 +1,26 @@
+{
+  "task": 10,
+  "models": [
+    "Lasso",
+    "ExtraTrees"
+  ],
+  "n_splits": 5,
+  "n_repeats": 3,
+  "noise_std": 3.0,
+  "random_state": 42,
+  "test_used_for_training": false,
+  "scenarios": [
+    "original",
+    "shuffled_target",
+    "noisy_target",
+    "artificial_leakage"
+  ],
+  "notes": [
+    "Trainval and test chronology checked",
+    "Lag features verified against raw series",
+    "Rolling features verified against raw series",
+    "Target perturbations applied only to training labels",
+    "Artificial leakage is demonstration only",
+    "Passing checks does not prove absence of all leakage"
+  ]
+}

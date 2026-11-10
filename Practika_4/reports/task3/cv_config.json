@@ -1,0 +1,26 @@
+{
+  "strategy": "TimeSeriesSplit",
+  "n_splits": 5,
+  "shuffle": false,
+  "test_fraction": 0.2,
+  "trainval_rows": 512,
+  "test_rows": 129,
+  "date_column": "date",
+  "target_column": "temperature_2m_mean",
+  "horizons": [
+    1,
+    7,
+    30
+  ],
+  "gap_by_horizon": {
+    "1": 0,
+    "7": 6,
+    "30": 29
+  },
+  "forecast_evaluation_note": "Validation lag features may use observed values from within the validation interval. This is suitable only when those values would actually be known at prediction time. Multi-step forecasting requires origin-based feature construction.",
+  "random_state": 42,
+  "python_version": "3.12.3",
+  "sklearn_version": "1.9.1",
+  "pandas_version": "3.1.1",
+  "numpy_version": "2.5.4"
+}

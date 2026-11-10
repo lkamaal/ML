@@ -1,0 +1,79 @@
+{
+  "Ridge": {
+    "model__alpha": 63.512210106407046
+  },
+  "Lasso": {
+    "model__alpha": 0.3470266988650412
+  },
+  "ElasticNet": {
+    "model__alpha": 0.10129197956845731,
+    "model__l1_ratio": 0.687265320016441
+  },
+  "DecisionTree": {
+    "max_depth": 9,
+    "min_samples_leaf": 13,
+    "min_samples_split": 7
+  },
+  "RandomForest": {
+    "max_depth": 10,
+    "max_features": 1.0,
+    "min_samples_leaf": 6,
+    "n_estimators": 132
+  },
+  "ExtraTrees": {
+    "max_depth": 10,
+    "max_features": 1.0,
+    "min_samples_leaf": 6,
+    "n_estimators": 132
+  },
+  "SVR": {
+    "model__C": 6.847920095574778,
+    "model__epsilon": 0.25924079097806274,
+    "model__gamma": "auto"
+  },
+  "NuSVR": {
+    "model__C": 6.847920095574778,
+    "model__gamma": "auto",
+    "model__nu": 0.22799939792816926
+  },
+  "LinearSVR": {
+    "model__C": 0.1648044642797898,
+    "model__epsilon": 0.5347564316322378
+  },
+  "KNN": {
+    "model__n_neighbors": 17,
+    "model__p": 1,
+    "model__weights": "distance"
+  },
+  "GaussianProcess": {
+    "model__alpha": 0.0006071989493441295,
+    "model__normalize_y": true
+  },
+  "Huber": {
+    "model__alpha": 0.1452824663751603,
+    "model__epsilon": 1.4185086660174142
+  },
+  "RANSAC": {
+    "model__max_trials": 53,
+    "model__min_samples": 0.9,
+    "model__residual_threshold": 2.1646759543664196
+  },
+  "XGBoost": {
+    "learning_rate": 0.06358606736176979,
+    "max_depth": 3,
+    "n_estimators": 101,
+    "subsample": 0.6524732068269011
+  },
+  "LightGBM": {
+    "learning_rate": 0.018891200276189388,
+    "min_child_samples": 5,
+    "n_estimators": 283,
+    "num_leaves": 28
+  },
+  "CatBoost": {
+    "depth": 4,
+    "iterations": 291,
+    "l2_leaf_reg": 9.822263016087534,
+    "learning_rate": 0.06358606736176979
+  }
+}

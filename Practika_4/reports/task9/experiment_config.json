@@ -1,0 +1,89 @@
+{
+  "task": 9,
+  "models": [
+    "Lasso",
+    "ElasticNet",
+    "LinearSVR",
+    "Ridge",
+    "ExtraTrees"
+  ],
+  "n_splits": 5,
+  "n_repeats": 3,
+  "n_candidates": 8,
+  "random_state": 42,
+  "n_jobs": 1,
+  "memory_poll_seconds": 0.005,
+  "memory_measure": "sampled RSS delta",
+  "search_refit": false,
+  "test_set_used": false,
+  "search_spaces": {
+    "Lasso": {
+      "alpha": [
+        0.001,
+        0.005,
+        0.01,
+        0.03,
+        0.05,
+        0.1,
+        0.3,
+        1.0
+      ]
+    },
+    "ElasticNet": {
+      "alpha": [
+        0.001,
+        0.005,
+        0.01,
+        0.03,
+        0.05,
+        0.1,
+        0.3,
+        1.0
+      ]
+    },
+    "LinearSVR": {
+      "C": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0,
+        30.0
+      ]
+    },
+    "Ridge": {
+      "alpha": [
+        0.01,
+        0.1,
+        0.5,
+        1.0,
+        3.0,
+        10.0,
+        30.0,
+        100.0
+      ]
+    },
+    "ExtraTrees": {
+      "n_estimators": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        80,
+        100,
+        120
+      ]
+    }
+  },
+  "limitations": [
+    "RSS polling may miss short memory peaks",
+    "Memory results depend on process allocator",
+    "Search times measured once per method",
+    "Both search methods enumerate the same candidates",
+    "Hyperparameters were tuned in task 4",
+    "Timing depends on hardware and system load"
+  ]
+}

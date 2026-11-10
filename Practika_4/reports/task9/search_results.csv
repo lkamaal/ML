@@ -1,0 +1,11 @@
+﻿model,method,search_seconds,peak_memory_mib,n_candidates,n_fits,best_cv_rmse,best_params
+Lasso,GridSearchCV,0.45614774999557994,0.71875,8,40,2.513680424424054,"{""model__alpha"": 0.3}"
+Lasso,RandomizedSearchCV,0.4407949159940472,0.0625,8,40,2.513680424424054,"{""model__alpha"": 0.3}"
+ElasticNet,GridSearchCV,0.4568622079968918,0.671875,8,40,2.5451725598985835,"{""model__alpha"": 0.3}"
+ElasticNet,RandomizedSearchCV,0.42520100000547245,0.03125,8,40,2.5451725598985835,"{""model__alpha"": 0.3}"
+LinearSVR,GridSearchCV,0.5414028340019286,0.15625,8,40,2.490454989756551,"{""model__C"": 0.1}"
+LinearSVR,RandomizedSearchCV,0.5342562910082052,0.15625,8,40,2.490454989756551,"{""model__C"": 0.1}"
+Ridge,GridSearchCV,0.09730583299824502,0.734375,8,40,2.9275185239518526,"{""model__alpha"": 100.0}"
+Ridge,RandomizedSearchCV,0.11919762501202058,0.25,8,40,2.9275185239518526,"{""model__alpha"": 100.0}"
+ExtraTrees,GridSearchCV,1.4160006670135772,0.03125,8,40,3.763567179596817,"{""n_estimators"": 120}"
+ExtraTrees,RandomizedSearchCV,1.3218248330085771,0.078125,8,40,3.763567179596817,"{""n_estimators"": 120}"

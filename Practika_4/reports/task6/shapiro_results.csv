@@ -1,0 +1,3 @@
+﻿model,W_statistic,p_value,normality_rejected
+RandomForest,0.9611224773681367,0.0009508156352356471,True
+Ridge,0.9536682932554632,0.00023289735042539113,True

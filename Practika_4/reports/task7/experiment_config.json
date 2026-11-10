@@ -1,0 +1,36 @@
+{
+  "task": 7,
+  "models": [
+    "Lasso",
+    "ElasticNet",
+    "LinearSVR",
+    "Ridge",
+    "ExtraTrees"
+  ],
+  "baseline": "Naive",
+  "n_splits": 5,
+  "alpha": 0.05,
+  "weights": {
+    "accuracy": 0.5,
+    "diagnostics": 0.3,
+    "interpretability": 0.2
+  },
+  "interpretability": {
+    "Lasso": 5,
+    "ElasticNet": 5,
+    "LinearSVR": 4,
+    "Ridge": 5,
+    "ExtraTrees": 3
+  },
+  "dm_max_lag": 7,
+  "dm_loss": "squared_error",
+  "dm_multiple_testing": "holm",
+  "test_set_used": false,
+  "notes": [
+    "One-step rolling-origin validation",
+    "Hyperparameters selected previously",
+    "CV estimates are not nested",
+    "RMSLE excluded from final ranking",
+    "Ranking is a heuristic composite score"
+  ]
+}

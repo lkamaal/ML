@@ -1,0 +1,19 @@
+{
+  "rows": 731,
+  "columns": 199,
+  "date_column": "time",
+  "target_column": "temperature_2m_mean",
+  "date_min": "2023-12-31 21:00:00",
+  "date_max": "2025-12-30 21:00:00",
+  "missing_total": 0,
+  "missing_target": 0,
+  "missing_dates": 0,
+  "duplicate_dates": 0,
+  "is_sorted": true,
+  "missing_calendar_days": 0,
+  "minimum_720_observations": true,
+  "target_min": -24.799999999999997,
+  "target_max": 27.2,
+  "target_mean": 7.7016415868673045,
+  "target_std": 10.001429899830677
+}

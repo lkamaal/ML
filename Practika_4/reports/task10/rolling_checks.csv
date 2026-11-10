@@ -1,0 +1,17 @@
+﻿feature,operation,window,passed,max_abs_difference
+target_roll_mean_3,mean,3,True,7.105427357601002e-15
+target_roll_std_3,std,3,True,7.265230084207985e-13
+target_roll_min_3,min,3,True,0.0
+target_roll_max_3,max,3,True,0.0
+target_roll_mean_7,mean,7,True,7.105427357601002e-15
+target_roll_std_7,std,7,True,2.7439162053610744e-13
+target_roll_min_7,min,7,True,0.0
+target_roll_max_7,max,7,True,0.0
+target_roll_mean_14,mean,14,True,7.105427357601002e-15
+target_roll_std_14,std,14,True,2.666755705149626e-13
+target_roll_min_14,min,14,True,0.0
+target_roll_max_14,max,14,True,0.0
+target_roll_mean_30,mean,30,True,1.0658141036401503e-14
+target_roll_std_30,std,30,True,1.3677947663381929e-13
+target_roll_min_30,min,30,True,0.0
+target_roll_max_30,max,30,True,0.0

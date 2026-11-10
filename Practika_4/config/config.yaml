@@ -1,0 +1,176 @@
+experiment:
+  name: practice4_task4
+  search_mode: balanced
+  random_state: 42
+  n_iter: 10
+  n_splits: 5
+  scoring: neg_root_mean_squared_error
+  n_jobs_search: 1
+  n_jobs_model: 2
+data:
+  source: /Users/lenar_966/Desktop/ML/Practika_4/data/task3_trainval.csv
+  date_column: date
+  target_column: temperature_2m_mean
+  feature_columns:
+  - target_lag_1
+  - target_lag_2
+  - target_lag_3
+  - target_lag_7
+  - target_lag_14
+  - target_lag_21
+  - target_lag_30
+  - target_lag_60
+  - target_lag_90
+  - target_roll_mean_3
+  - target_roll_std_3
+  - target_roll_min_3
+  - target_roll_max_3
+  - target_roll_mean_7
+  - target_roll_std_7
+  - target_roll_min_7
+  - target_roll_max_7
+  - target_roll_mean_14
+  - target_roll_std_14
+  - target_roll_min_14
+  - target_roll_max_14
+  - target_roll_mean_30
+  - target_roll_std_30
+  - target_roll_min_30
+  - target_roll_max_30
+  - target_change_1
+  - target_change_7
+  - month
+  - dayofyear
+  - dayofweek
+  - annual_sin_1
+  - annual_cos_1
+  - annual_sin_2
+  - annual_cos_2
+  forecast_horizon: 1
+  validation_mode: rolling_one_step_with_observed_history
+models:
+  Ridge:
+    estimator: Pipeline
+    parameters:
+      model__alpha: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15bf31fa0>
+  Lasso:
+    estimator: Pipeline
+    parameters:
+      model__alpha: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cb96de0>
+  ElasticNet:
+    estimator: Pipeline
+    parameters:
+      model__alpha: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cc92180>
+      model__l1_ratio: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cf2f860>
+  DecisionTree:
+    estimator: DecisionTreeRegressor
+    parameters:
+      max_depth: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x15cf2eab0>
+      min_samples_leaf: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x15cf2e360>
+      min_samples_split: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x15cf2f350>
+  RandomForest:
+    estimator: RandomForestRegressor
+    parameters:
+      n_estimators: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at
+        0x15cf2f410>
+      max_depth: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x15cf2d610>
+      min_samples_leaf: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x15cf2d8b0>
+      max_features: '[''sqrt'', 0.6, 1.0]'
+  ExtraTrees:
+    estimator: ExtraTreesRegressor
+    parameters:
+      n_estimators: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at
+        0x15cfc5880>
+      max_depth: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x15cfc4e30>
+      min_samples_leaf: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x15cfc4fb0>
+      max_features: '[''sqrt'', 0.6, 1.0]'
+  SVR:
+    estimator: Pipeline
+    parameters:
+      model__C: <scipy.stats._distn_infrastructure.rv_continuous_frozen object at
+        0x15cfc56d0>
+      model__epsilon: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cfc41d0>
+      model__gamma: '[''scale'', ''auto'']'
+  NuSVR:
+    estimator: Pipeline
+    parameters:
+      model__C: <scipy.stats._distn_infrastructure.rv_continuous_frozen object at
+        0x15cfc45c0>
+      model__nu: <scipy.stats._distn_infrastructure.rv_continuous_frozen object at
+        0x15cfc4b30>
+      model__gamma: '[''scale'', ''auto'']'
+  LinearSVR:
+    estimator: Pipeline
+    parameters:
+      model__C: <scipy.stats._distn_infrastructure.rv_continuous_frozen object at
+        0x15cfd6030>
+      model__epsilon: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cfd6210>
+  KNN:
+    estimator: Pipeline
+    parameters:
+      model__n_neighbors: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x15cfd6540>
+      model__weights: '[''uniform'', ''distance'']'
+      model__p: '[1, 2]'
+  GaussianProcess:
+    estimator: Pipeline
+    parameters:
+      model__alpha: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cfd1970>
+      model__normalize_y: '[True, False]'
+  Huber:
+    estimator: Pipeline
+    parameters:
+      model__epsilon: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cfd3800>
+      model__alpha: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x15cfd2f00>
+  RANSAC:
+    estimator: Pipeline
+    parameters:
+      model__min_samples: '[0.5, 0.7, 0.9]'
+      model__max_trials: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x15cfd26c0>
+      model__residual_threshold: <scipy.stats._distn_infrastructure.rv_continuous_frozen
+        object at 0x15cfd1d00>
+  XGBoost:
+    estimator: XGBRegressor
+    parameters:
+      n_estimators: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at
+        0x15cfd0e00>
+      max_depth: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x15cfd0fe0>
+      learning_rate: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x11833f050>
+      subsample: <scipy.stats._distn_infrastructure.rv_continuous_frozen object at
+        0x11833c0b0>
+  LightGBM:
+    estimator: LGBMRegressor
+    parameters:
+      n_estimators: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at
+        0x15cbfbbf0>
+      num_leaves: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at
+        0x118339190>
+      learning_rate: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x118344560>
+      min_child_samples: <scipy.stats._distn_infrastructure.rv_discrete_frozen object
+        at 0x118344770>
+  CatBoost:
+    estimator: CatBoostRegressor
+    parameters:
+      iterations: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at
+        0x1172ac8f0>
+      depth: <scipy.stats._distn_infrastructure.rv_discrete_frozen object at 0x118349880>
+      learning_rate: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x11835eab0>
+      l2_leaf_reg: <scipy.stats._distn_infrastructure.rv_continuous_frozen object
+        at 0x11835e960>

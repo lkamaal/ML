@@ -1,0 +1,7 @@
+Модель,Стратегия,RMSE
+Ridge,Recursive,3.458235
+Ridge,Direct,2.983278
+Ridge,Hybrid,3.051082
+RandomForest,Recursive,4.182295
+RandomForest,Direct,3.524996
+RandomForest,Hybrid,3.450969

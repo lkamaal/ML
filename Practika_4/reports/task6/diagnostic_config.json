@@ -1,0 +1,29 @@
+{
+  "task": 6,
+  "models": [
+    "Ridge",
+    "RandomForest"
+  ],
+  "test_start": "2025-08-25",
+  "test_observations": 129,
+  "alpha": 0.05,
+  "ljung_box_lags": [
+    7,
+    14,
+    21,
+    30
+  ],
+  "acf_max_lag": 30,
+  "pacf_max_lag": 30,
+  "diagnostic_scope": "Chronological one-step residuals. Multi-step overlapping forecasts are summarized descriptively.",
+  "checks": {
+    "models_loaded": true,
+    "all_test_days_predicted": true,
+    "residuals_finite": true,
+    "dates_sorted": true,
+    "ljung_box_completed": true,
+    "shapiro_completed": true,
+    "acf_completed": true,
+    "pacf_completed": true
+  }
+}

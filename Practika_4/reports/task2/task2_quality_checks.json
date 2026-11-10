@@ -1,0 +1,10 @@
+{
+  "target_exists": true,
+  "dates_unique": true,
+  "dates_sorted": true,
+  "continuous_daily": true,
+  "no_missing_target": true,
+  "no_missing_model_features": true,
+  "historical_feature_independence": true,
+  "minimum_720_source_rows": true
+}
