@@ -1,0 +1,6 @@
+﻿feature,pearson,observations
+temp_wind_interaction,0.8784884168126116,584
+temperature_2m_min_lag_365,0.8017997617738442,584
+temperature_2m_min_lag_14,0.7275282765433995,584
+temperature_2m_mean_lag1_squared,0.7096238460962625,584
+pressure_msl_mean_roll_max_30,-0.6796732450688334,584

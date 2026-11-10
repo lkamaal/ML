@@ -1,0 +1,4 @@
+﻿model,saved_path,max_difference,passed
+ARIMA,/Users/lenar_966/Desktop/ML/Practika_3/models/task10_arima_wrapper.joblib,0.0,True
+SARIMA,/Users/lenar_966/Desktop/ML/Practika_3/models/task10_sarima_wrapper.joblib,0.0,True
+SARIMAX,/Users/lenar_966/Desktop/ML/Practika_3/models/task10_sarimax_wrapper.joblib,0.0,True

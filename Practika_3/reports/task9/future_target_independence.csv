@@ -1,0 +1,4 @@
+﻿model,max_prediction_difference,passed
+ARIMA_5_0_2,0.0,True
+SARIMA,0.0,True
+SARIMAX,0.0,True

@@ -1,0 +1,25 @@
+{
+  "target": "temperature_2m_mean",
+  "transformation": "identity",
+  "difference_order": 0,
+  "last_original_value": -7.4,
+  "n_observations": 731,
+  "source_path": "/Users/lenar_966/Desktop/ML/Practika_1/data/features_dataset.csv",
+  "source_copy": "/Users/lenar_966/Desktop/ML/Practika_3/data/source_dataset_unchanged.csv",
+  "stationarity_original": {
+    "n": 731,
+    "ADF_stat": -3.2030266898194815,
+    "ADF_p": 0.019810149628163288,
+    "KPSS_stat": 0.32389955466456666,
+    "KPSS_p": 0.1,
+    "stationary_5pct": true
+  },
+  "stationarity_difference_1": {
+    "n": 730,
+    "ADF_stat": -14.095812354673846,
+    "ADF_p": 2.6717143815349236e-26,
+    "KPSS_stat": 0.318994433087076,
+    "KPSS_p": 0.1,
+    "stationary_5pct": true
+  }
+}

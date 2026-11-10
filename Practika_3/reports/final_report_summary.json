@@ -1,0 +1,33 @@
+{
+  "task": 14,
+  "report_path": "/Users/lenar_966/Desktop/ML/Practika_3/reports/final_report.md",
+  "word_count": 2881,
+  "section_checks": {
+    "## 1. Введение": true,
+    "## 2. Описание исходных данных": true,
+    "## 3. Предварительный анализ": true,
+    "## 4. Отбор и исследование признаков": true,
+    "## 5. Стратегии": true,
+    "## 6. Сравнение": true,
+    "## 7. Статистическая диагностика": true,
+    "## 8. Интерпретация": true,
+    "## 9. Проверка устойчивости": true,
+    "## 10. Rolling": true,
+    "## 11. Программная реализация": true,
+    "## 12. Ограничения": true,
+    "## 13. Практические рекомендации": true,
+    "## 14. Заключение": true
+  },
+  "included_tables": [
+    "reports/task10/model_status.csv",
+    "reports/task11/backtest_summary.csv",
+    "reports/task11/strategy_comparison.csv"
+  ],
+  "included_images": [
+    "task11/mae_by_horizon.png",
+    "task11/mae_by_origin_h30.png",
+    "task11/mae_boxplot_h30.png"
+  ],
+  "missing_images": [],
+  "created_at": "2026-11-10T23:06:11.393028"
+}

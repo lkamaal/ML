@@ -1,0 +1,10 @@
+{
+  "task": 12,
+  "pytest_exit_code": 0,
+  "pytest_success": true,
+  "test_file": "/Users/lenar_966/Desktop/ML/Practika_3/tests/test_forecasting_wrapper.py",
+  "pytest_report": "/Users/lenar_966/Desktop/ML/Practika_3/reports/task12/pytest_report.txt",
+  "requirements": "/Users/lenar_966/Desktop/ML/Practika_3/requirements_task12.txt",
+  "python_version": "3.12.3",
+  "created_at": "2026-11-10T22:58:17.361961"
+}

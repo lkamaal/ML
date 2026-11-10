@@ -1,0 +1,28 @@
+{
+  "task": 11,
+  "target": "temperature_2m_mean",
+  "observations": 731,
+  "initial_train_size": 584,
+  "test_size": 147,
+  "rolling_window": 365,
+  "n_origins": 30,
+  "horizons": [
+    1,
+    7,
+    30
+  ],
+  "strategies": [
+    "Rolling",
+    "Expanding"
+  ],
+  "models": [
+    "ARIMA",
+    "SARIMA",
+    "SARIMAX"
+  ],
+  "total_fits": 180,
+  "successful_fits": 180,
+  "leakage_checks_passed": 60,
+  "leakage_checks_total": 60,
+  "total_runtime_sec": 88.72729445798905
+}

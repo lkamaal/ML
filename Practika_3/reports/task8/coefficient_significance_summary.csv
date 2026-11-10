@@ -1,0 +1,4 @@
+﻿model,total_parameters,significant_parameters,significant_share_pct
+ARIMA_5_0_2,9,7,77.77777777777779
+SARIMA,7,7,100.0
+SARIMAX,11,9,81.81818181818183

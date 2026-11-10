@@ -1,0 +1,5 @@
+﻿model,adequacy_score,LB_pass,Shapiro_pass,BP_pass
+ARIMA_5_0_2,0.3333333333333333,True,False,False
+SARIMA,0.0,False,False,False
+SARIMAX,0.3333333333333333,True,False,False
+Prophet,0.3333333333333333,False,True,False

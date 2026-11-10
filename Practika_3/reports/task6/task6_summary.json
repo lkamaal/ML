@@ -1,0 +1,71 @@
+{
+  "task": 6,
+  "target": "temperature_2m_mean",
+  "observations": 731,
+  "train_observations": 584,
+  "test_observations": 147,
+  "alpha": 0.05,
+  "initial_burn": 30,
+  "models": [
+    "ARIMA_5_0_2",
+    "SARIMA",
+    "SARIMAX",
+    "Prophet"
+  ],
+  "diagnostics": [
+    {
+      "model": "ARIMA_5_0_2",
+      "n_residuals": 554,
+      "mean_residual": 0.01450778792041946,
+      "std_residual": 2.236001088134068,
+      "LB_p_30": 0.33843477082760137,
+      "Shapiro_p": 5.194035585651817e-08,
+      "BP_p": 0.0001906100946921316,
+      "LB_pass": true,
+      "Shapiro_pass": false,
+      "BP_pass": false
+    },
+    {
+      "model": "SARIMA",
+      "n_residuals": 554,
+      "mean_residual": -0.001875670508678953,
+      "std_residual": 2.2748110018470618,
+      "LB_p_30": 0.03496137136559612,
+      "Shapiro_p": 1.5001032741977786e-09,
+      "BP_p": 0.00047126910764623423,
+      "LB_pass": false,
+      "Shapiro_pass": false,
+      "BP_pass": false
+    },
+    {
+      "model": "SARIMAX",
+      "n_residuals": 554,
+      "mean_residual": -0.013913952843402456,
+      "std_residual": 2.1598756497931135,
+      "LB_p_30": 0.10117395980780063,
+      "Shapiro_p": 1.3856728029494116e-06,
+      "BP_p": 5.5253077949133206e-05,
+      "LB_pass": true,
+      "Shapiro_pass": false,
+      "BP_pass": false
+    },
+    {
+      "model": "Prophet",
+      "n_residuals": 554,
+      "mean_residual": 0.15553705818556146,
+      "std_residual": 3.3443328214958394,
+      "LB_p_30": 1.3208812453200866e-105,
+      "Shapiro_p": 0.08271659368029749,
+      "BP_p": 1.306278572052128e-09,
+      "LB_pass": false,
+      "Shapiro_pass": true,
+      "BP_pass": false
+    }
+  ],
+  "model_status": {
+    "ARIMA_5_0_2": "OK",
+    "SARIMA": "OK",
+    "SARIMAX": "OK",
+    "Prophet": "OK"
+  }
+}

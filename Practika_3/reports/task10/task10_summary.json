@@ -1,0 +1,16 @@
+{
+  "task": 10,
+  "target": "temperature_2m_mean",
+  "observations": 731,
+  "train_observations": 584,
+  "test_observations": 147,
+  "forecast_horizon": 30,
+  "module_path": "/Users/lenar_966/Desktop/ML/Practika_3/forecasting_wrapper.py",
+  "supported_models": [
+    "ARIMA",
+    "SARIMA",
+    "SARIMAX"
+  ],
+  "successful_models": 3,
+  "serialization_passed": 3
+}

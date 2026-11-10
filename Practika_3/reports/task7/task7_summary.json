@@ -1,0 +1,46 @@
+{
+  "task": 7,
+  "target": "temperature_2m_mean",
+  "observations": 731,
+  "train_observations": 584,
+  "test_observations": 147,
+  "n_origins": 30,
+  "horizons": [
+    1,
+    7,
+    30
+  ],
+  "mase_scale": 5.28675799086758,
+  "business_threshold_celsius": 2.0,
+  "ranking_weights": {
+    "accuracy": 0.4,
+    "adequacy": 0.3,
+    "interpretability": 0.3
+  },
+  "best_models": [
+    {
+      "horizon": 1,
+      "model": "ARIMA_5_0_2",
+      "MAE": 1.5933066862256091,
+      "final_score": 0.77
+    },
+    {
+      "horizon": 7,
+      "model": "ARIMA_5_0_2",
+      "MAE": 2.245964943836263,
+      "final_score": 0.77
+    },
+    {
+      "horizon": 30,
+      "model": "ARIMA_5_0_2",
+      "MAE": 2.5827866224976597,
+      "final_score": 0.77
+    }
+  ],
+  "model_status": {
+    "ARIMA_5_0_2": "OK",
+    "SARIMA": "OK",
+    "SARIMAX": "OK",
+    "Prophet": "OK"
+  }
+}

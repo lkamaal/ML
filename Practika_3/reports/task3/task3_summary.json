@@ -1,0 +1,80 @@
+{
+  "task": 3,
+  "title": "Описательный анализ пространства признаков",
+  "target": "temperature_2m_mean",
+  "source": "/Users/lenar_966/Desktop/ML/Practika_1/data/features_dataset.csv",
+  "train_observations": 584,
+  "features_before_vif": 185,
+  "features_after_vif": 94,
+  "lag_features": 56,
+  "rolling_features": 81,
+  "calendar_features": 9,
+  "correlation_before": {
+    "pairs": 17020,
+    "mean_abs_corr": 0.2313268911877717,
+    "median_abs_corr": 0.12338828987808326,
+    "pairs_above_08": 988,
+    "pairs_above_09": 397,
+    "max_abs_corr": 0.9999765322145454
+  },
+  "correlation_after": {
+    "pairs": 4371,
+    "mean_abs_corr": 0.1004198387298055,
+    "median_abs_corr": 0.0547076034138949,
+    "pairs_above_08": 1,
+    "pairs_above_09": 0,
+    "max_abs_corr": 0.8229044231797319
+  },
+  "top_target_features": [
+    {
+      "feature": "temp_wind_interaction",
+      "pearson": 0.8784884168126116,
+      "spearman": 0.8884557154155853
+    },
+    {
+      "feature": "temperature_2m_min_lag_365",
+      "pearson": 0.8017997617738442,
+      "spearman": 0.8347352253005486
+    },
+    {
+      "feature": "temperature_2m_min_lag_14",
+      "pearson": 0.7275282765433995,
+      "spearman": 0.7703939565690386
+    },
+    {
+      "feature": "temperature_2m_mean_lag1_squared",
+      "pearson": 0.7096238460962625,
+      "spearman": 0.7622902030876995
+    },
+    {
+      "feature": "pressure_msl_mean_roll_max_30",
+      "pearson": -0.6796732450688334,
+      "spearman": -0.689815398287204
+    },
+    {
+      "feature": "pressure_msl_mean_roll_max_90",
+      "pearson": -0.6617073476649153,
+      "spearman": -0.7006643700149909
+    },
+    {
+      "feature": "relative_humidity_2m_mean_lag_30",
+      "pearson": -0.5460104187403841,
+      "spearman": -0.5628191888861935
+    },
+    {
+      "feature": "pressure_msl_mean_roll_min_90",
+      "pearson": 0.5307885350295026,
+      "spearman": 0.5363742980419981
+    },
+    {
+      "feature": "relative_humidity_2m_mean_roll_std_90",
+      "pearson": 0.5278196727574624,
+      "spearman": 0.4878909757457661
+    },
+    {
+      "feature": "pressure_msl_mean_roll_std_7",
+      "pearson": -0.5198001236547146,
+      "spearman": -0.5243045704370204
+    }
+  ]
+}

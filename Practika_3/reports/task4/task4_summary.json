@@ -1,0 +1,36 @@
+{
+  "task": 4,
+  "target": "temperature_2m_mean",
+  "source": "/Users/lenar_966/Desktop/ML/Practika_3/data/task1_prepared_series.csv",
+  "observations": 731,
+  "train_observations": 584,
+  "test_observations": 147,
+  "horizons": [
+    1,
+    7,
+    30
+  ],
+  "n_lags": 30,
+  "model": "Ridge",
+  "alpha": 10.0,
+  "best_strategies": [
+    {
+      "horizon": 1,
+      "strategy": "Recursive",
+      "MAE": 1.6475443397172571,
+      "RMSE": 2.2139477365773224
+    },
+    {
+      "horizon": 7,
+      "strategy": "Recursive",
+      "MAE": 2.460699895082301,
+      "RMSE": 3.218448437675146
+    },
+    {
+      "horizon": 30,
+      "strategy": "Hybrid",
+      "MAE": 2.416946632755316,
+      "RMSE": 3.0830635851449735
+    }
+  ]
+}

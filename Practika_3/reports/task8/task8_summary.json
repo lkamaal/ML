@@ -1,0 +1,46 @@
+{
+  "task": 8,
+  "target": "temperature_2m_mean",
+  "observations": 731,
+  "train_observations": 584,
+  "test_observations": 147,
+  "alpha": 0.05,
+  "models": [
+    "ARIMA_5_0_2",
+    "SARIMA",
+    "SARIMAX"
+  ],
+  "significance": [
+    {
+      "model": "ARIMA_5_0_2",
+      "total_parameters": 9,
+      "significant_parameters": 7,
+      "significant_share_pct": 77.77777777777779
+    },
+    {
+      "model": "SARIMA",
+      "total_parameters": 7,
+      "significant_parameters": 7,
+      "significant_share_pct": 100.0
+    },
+    {
+      "model": "SARIMAX",
+      "total_parameters": 11,
+      "significant_parameters": 9,
+      "significant_share_pct": 81.81818181818183
+    }
+  ],
+  "prophet_summary": {
+    "trend_start": 1.8289150527999998,
+    "trend_end": 7.698308278377754,
+    "trend_change": 5.869393225577754,
+    "yearly_min": -13.966847525580818,
+    "yearly_max": 14.58154253228537
+  },
+  "model_status": {
+    "ARIMA_5_0_2": "OK",
+    "SARIMA": "OK",
+    "SARIMAX": "OK",
+    "Prophet": "OK"
+  }
+}

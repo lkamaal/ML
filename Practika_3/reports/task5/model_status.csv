@@ -1,0 +1,16 @@
+﻿model,status
+Naive,OK
+Seasonal_Naive_7,OK
+Seasonal_Naive_365,OK
+AR_3,OK
+MA_3,OK
+ARMA_3_2,OK
+ARIMA_5_0_2,OK
+ARIMA_3_1_2,OK
+SARIMA,OK
+SARIMAX,OK
+SES,OK
+Holt_Additive,OK
+Holt_Multiplicative,OK
+TBATS,OK
+Prophet,OK
